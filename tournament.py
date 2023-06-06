@@ -19,7 +19,6 @@ def main():
 
     with open(filename, "r") as f:
         reader = csv.DictReader(f)
-        next(reader)
         for row in reader:
             teams.append({
             "team" : row["team"],
